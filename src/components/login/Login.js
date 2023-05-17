@@ -1,6 +1,7 @@
 import React from "react";
 import  "./Login.css";
-import profile from "../../images/a.png";
+import profile from "../../images/img1.jpg";
+// import profile from "../../images/pr.png";
 import email from "../../images/email.jpg";
 import pass from "../../images/pass.png";
 
@@ -28,7 +29,7 @@ const Login = () => {
               <button>Login</button>
             </div>
             <p className="link">
-              <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
+              <a href="#">Forgot password ?</a> Or <a href="#">Sign Up</a>
             </p>
           </div>
         </div>
