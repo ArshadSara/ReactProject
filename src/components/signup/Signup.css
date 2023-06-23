@@ -1,0 +1,99 @@
+.signup {
+    text-align: center;
+    justify-content: right;
+    display: flex; 
+    padding-top: 90px;
+    padding-right: 50px;
+    padding-bottom: 90px;
+    background-color: #010208;
+    background-image: url(./../../images/bg1.avif);
+    }
+    .signup .sub-main {
+      display: flex;
+      justify-content: center;
+      height:700px;
+      width: 35%;
+      /* box-shadow: 11px 12px 13px 12px rgb(207, 207, 207); */
+      padding-top: 30px;
+      border-radius: 60px; 
+      background-color: rgb(199 214 235);
+    }
+    .signup .imgs {
+        padding-top: 20px;
+        justify-content: center;
+        display: flex;
+      }
+    .signup .container-image {
+      background-color: rgb(223, 221, 221); 
+      border-radius: 150px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 115px;
+      width: 115px;
+    }
+    .signup .profile {
+      height: 100px;
+      width: 100px;
+      border-radius: 130px;
+    } 
+  
+    .signup .input{
+        width: 300px;
+        height: 50px;
+        border-radius: 60px;
+        box-shadow: inset 0px 0px 25px 0px #888;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+  
+    .signup .email{
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        padding: 14px 0 0 25px;
+    }
+  
+    .signup .name{
+        padding-left: 70px;
+        font-size: 20px;
+    }
+    .signup .second-input{
+        padding-top: 20px;
+    }
+  
+    .signup .back button{
+        width: 380px !important;
+        height: 50px;
+        border-radius: 60px;
+        background-color: #4e675d;
+        color: white;
+        font-size: 25px;
+        border: none;
+    }
+    .signup .login-button{
+        padding-top: 25px;
+    }
+  
+    .signup .link{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    /* .signup .back {
+        width: 380px;
+        height: 50px;
+        border-radius: 60px;
+        background-color: #4e675d;
+        color: white;
+        font-size: 25px;
+        border: none;
+    } */
+    a{
+        color: #4e4e70;
+    }
+    .signup .textsize{
+        padding-right: 280px;
+        font-size: larger;
+        margin: 0px;
+    }

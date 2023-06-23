@@ -1,8 +1,9 @@
 .main {
   text-align: center;
-  justify-content: center;
+  justify-content: right;
   display: flex; 
   padding-top: 90px;
+  padding-right: 50px;
   padding-bottom: 90px;
   background-color: #010208;
   background-image: url(./../../images/bg1.avif);
@@ -78,7 +79,8 @@
   .link{
       font-size: 25px;
       font-weight: 400;
+      padding-left: 250px;
   }
    a{
-       color: #4e4e70;
+       color: #020217;
    }
