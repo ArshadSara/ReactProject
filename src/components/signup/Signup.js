@@ -1,64 +1,52 @@
 import React from "react";
 import "./Signup.css";
-import profile from "../../images/mypic.jpg";
-// import profile from "../../images/pr.png";
-import email from "../../images/email.jpg";
-import pass from "../../images/pass.png";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const handleOnClick = (e) => {
+    navigate("/");
+    e.preventDefault()
+  };
   return (
-    <div className="signup">
-      <div className="sub-main">
-        <div>
-          <div className="imgs">
-            <div className="container-image">
-              <img src={profile} alt="profile" className="profile" />
-            </div>
-          </div>
-          <div>
-            <h1>Sign up</h1>
-            <div>
-              <p className="textsize">Full Name</p>
-              <img src={email} alt="email" className="email" />
-              <input
-                type="text"
-                placeholder="Please enter Full Name"
-                className="name"
-              />
-            </div>
-            <div>
-              <p className="textsize">phone Number</p>
-              <img src={email} alt="pass" className="email" />
-              <input
-                type="text"
-                placeholder="Please enter email"
-                className="name"
-              />
-            </div>
-            <div>
-              <p className="textsize">Email</p>
-              <img src={email} alt="pass" className="email" />
-              <input
-                type="text"
-                placeholder="Please enter email"
-                className="name"
-              />
-            </div>
-            <div>
-              <p className="textsize">Create password</p>
-
-              <img src={pass} alt="pass" className="email" />
-              <input
-                type="password"
-                placeholder="Please enter password"
-                className="name"
-              />
-            </div>
-            <div className="login-button">
-              <button>Submit</button>
-            </div>
-          </div>
+    <div className="container">
+      <div className="signup">
+        <div className="title">
+          <span>Register</span>
         </div>
+        <form action="#">
+          <div className="row">
+            <i className="fas fa-user"></i>
+            <input type="text" placeholder="First Name" required />
+          </div>
+          <div className="row">
+          <i className="fas fa-user"></i>
+            <input type="password" placeholder="Last Name" required />
+          </div>
+          <div className="row">
+          {/* <i className="fa-solid fa-envelope"></i> */}
+          <i className="fas fa-envelope"></i>
+            <input type="password" placeholder="Email" required />
+          </div>
+          <div className="row">
+            <i className="fas fa-mobile" aria-hidden="true"></i>
+            <input type="password" placeholder="Phone Number" required />
+          </div>
+          <div className="row">
+            <i className="fas fa-lock"></i>
+            <input type="password" placeholder="New Password" required />
+          </div>
+          <div className="row">
+            <i className="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" required />
+          </div>
+          <div className="row button">
+            <input type="submit" value="Submit" />
+          </div>
+          <div className="signup-link">
+            Go to Login  <a onClick={(e)=>handleOnClick(e)}>Login</a>
+          </div>
+        </form>
       </div>
     </div>
   );

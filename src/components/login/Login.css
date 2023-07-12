@@ -1,86 +1,122 @@
-.main {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  /* background: linear-gradient(to left, rgb(0, 2, 0), white); */
+  background-image: url("https://t3.ftcdn.net/jpg/03/69/00/58/360_F_369005893_UYbUUUHDiB0HT7vs7EpO0JZ4vf830R5K.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+::selection{
+  background: rgba(26,188,156,0.3);
+}
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.login{
+  width: 100%;
+  background: linear-gradient(to left, rgb(70, 53, 70), white);
+  /* background: linear-gradient(to left, rgb(0, 2, 0), white); */
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.login .title{
+  height: 80px;
+  background: linear-gradient(to left, rgb(70, 53, 70), white);
+  border-radius: 10px 10px 0 0;
+  color: #100101;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form{
+  /* height: 350px; */
+  padding: 30px 25px 25px 25px;
+}
+.login form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.login form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #050707;
+  box-shadow: inset 0px 0px 2px 2px rgba(20, 21, 21, 0.25);
+}
+form .row input::placeholder{
+  color: #999;
+
+}
+.login form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #0c0c0c;
+  font-size: 18px;
+  background: linear-gradient(to left, rgb(70, 53, 70), white);
+  border: 1px solid linear-gradient(to left, rgb(70, 53, 70), white);
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form .pass{
+  margin: -8px 0 20px 0;
+}
+.login form .pass a{
+  color: #040c0b;
+  font-size: 17px;
+  text-decoration: none;
+}
+.login form .pass a:hover{
+  text-decoration: underline;
+}
+.login form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: linear-gradient(to left, rgb(70, 53, 70), white);
+
+  border: 1px solid floralwhite;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: linear-gradient(to right, rgb(70, 53, 70), white);
+}
+.login form .signup-link{
   text-align: center;
-  justify-content: right;
-  display: flex; 
-  padding-top: 90px;
-  padding-right: 50px;
-  padding-bottom: 90px;
-  background-color: #010208;
-  background-image: url(./../../images/bg1.avif);
-  }
-  .sub-main {
-    display: flex;
-    justify-content: center;
-    height: 550px;
-    width: 35%;
-    /* box-shadow: 11px 12px 13px 12px rgb(207, 207, 207); */
-    padding-top: 30px;
-    border-radius: 60px; 
-    background-color: rgb(199 214 235);
-  }
-  .imgs {
-      padding-top: 20px;
-      justify-content: center;
-      display: flex;
-    }
-  .container-image {
-    background-color: rgb(223, 221, 221); 
-    border-radius: 150px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 115px;
-    width: 115px;
-  }
-  .profile {
-    height: 100px;
-    width: 100px;
-    border-radius: 130px;
-  } 
-
-  input{
-      width: 300px;
-      height: 50px;
-      border-radius: 60px;
-      box-shadow: inset 0px 0px 25px 0px #888;
-      border: none;
-      outline: none;
-      background-color: #fff;
-  }
-
-  .email{
-      height: 25px;
-      width: 25px;
-      position: absolute;
-      padding: 14px 0 0 25px;
-  }
-
-  .name{
-      padding-left: 70px;
-      font-size: 20px;
-  }
-  .second-input{
-      padding-top: 20px;
-  }
-
-  button{
-      width: 380px;
-      height: 50px;
-      border-radius: 60px;
-      background-color: #4e675d;
-      color: white;
-      font-size: 25px;
-      border: none;
-  }
-  .login-button{
-      padding-top: 25px;
-  }
-
-  .link{
-      font-size: 25px;
-      font-weight: 400;
-      padding-left: 250px;
-  }
-   a{
-       color: #020217;
-   }
+  margin-top: 20px;
+  font-size: 17px;
+}
+.login form .signup-link a{
+  color: #090f0e;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
