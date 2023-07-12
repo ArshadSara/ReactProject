@@ -1,43 +1,38 @@
 import React from "react";
-import  "./Login.css";
-import profile from "../../images/mypic.jpg";
-import email from "../../images/email.jpg";
-import pass from "../../images/pass.png";
+import "./Login.css";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const handleOnClick = ()=>{
-    navigate("/Signup")
-  }
+  const handleOnClick = (e) => {
+    navigate("/Signup");
+    e.preventDefault()
+  };
   return (
-    <div className="main">
-      <div className="sub-main">
-        <div>
-          <div className="imgs">
-            <div className="container-image">
-              <img src={profile} alt="profile" className="profile" />
-            </div>
-          </div>
-          <div>
-            <h1>Login Page</h1>
-            <div>
-              <img src={email} alt="email" className="email" />
-              <input type="text" placeholder="Please enter email" className="name" />
-            </div>
-            <div className="second-input">
-              <img src={pass} alt="pass" className="email" />
-              <input type="password" placeholder="Please enter password" className="name" />
-            </div>
-            <div className="login-button">
-              <button>Login</button>
-            </div>
-            <p className="link">
-              {/* <a href="#">Forgot password ?</a> Or  */}
-               <a onClick={(e)=>handleOnClick(e)}> Sign Up</a>
-            </p>
-          </div>
+    <div className="container">
+      <div className="wrapper">
+        <div className="title">
+          <span>Login</span>
         </div>
+        <form action="#">
+          <div className="row">
+            <i className="fas fa-user"></i>
+            <input type="text" placeholder="Email" required />
+          </div>
+          <div className="row">
+            <i className="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div className="pass">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div className="row button">
+            <input type="submit" value="Login" />
+          </div>
+          <div className="signup-link">
+            Not a member? <a onClick={(e)=>handleOnClick(e)}>Signup now</a>
+          </div>
+        </form>
       </div>
     </div>
   );
