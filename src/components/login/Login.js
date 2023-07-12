@@ -4,13 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const handleOnClick = (e) => {
+  const handleSignIn = (e) => {
     navigate("/Signup");
-    e.preventDefault()
+    e.preventDefault();
+  };
+  const handleForgotPassword = (e) => {
+    navigate("/forgotpassword");
+    e.preventDefault();
   };
   return (
     <div className="container">
-      <div className="wrapper">
+      <div className="login">
         <div className="title">
           <span>Login</span>
         </div>
@@ -23,14 +27,16 @@ const Login = () => {
             <i className="fas fa-lock"></i>
             <input type="password" placeholder="Password" required />
           </div>
-          <div className="pass">
-            <a href="#">Forgot password?</a>
+          <div>
+            <a onClick={(e) => handleForgotPassword(e)}>
+              <span style={{color:"black"}}>Forgot password?</span>
+            </a>
           </div>
           <div className="row button">
             <input type="submit" value="Login" />
           </div>
           <div className="signup-link">
-            Not a member? <a onClick={(e)=>handleOnClick(e)}>Signup now</a>
+            Not a member? <a onClick={(e) => handleSignIn(e)}>Signup now</a>
           </div>
         </form>
       </div>
