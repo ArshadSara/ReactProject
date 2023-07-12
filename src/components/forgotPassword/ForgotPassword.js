@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     <div className="container">
       <div className="pass">
         <div className="title">
-          <span>Login</span>
+          <span>Forgot Password</span>
         </div>
         <form action="#">
           <div className="row">
