@@ -4,7 +4,7 @@ import {
     LOGIN_USER,
     LOGIN_USER_SUCCESS,
     LOGIN_USER_ERROR,
-} from '../../redux/actions.js';
+} from '../../../../redux/actions';
 
 export const loginUserActionError = (message) => async (dispatch) => {
     dispatch({
