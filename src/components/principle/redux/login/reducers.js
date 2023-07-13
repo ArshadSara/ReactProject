@@ -3,7 +3,7 @@ import {
     LOGIN_USER,
     LOGIN_USER_SUCCESS,
     LOGIN_USER_ERROR,
-} from '../../redux/actions.js';
+} from '../../../../redux/actions.js';
 
 
 const INIT_STATE = {
